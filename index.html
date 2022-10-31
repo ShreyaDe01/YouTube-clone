@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube clone</title>
+        <link rel="stylesheet" type = "text/css" href = "yt.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"/>
+    </head>
+    <body>
+        <!--Nav bar begins-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="dropdown">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true" aria-controls="sidebar" style="border-color: white;">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" target="_self"><img src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg" style="height: 56px;"></a>
+              <form class="d-flex" id="searchbar">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="max-width:500px">
+                <button class="btn" type="submit" style="padding: 0%;"><span class="material-symbols-outlined">search</span></button>
+              </form>
+               <a class="nav-link" href="#"></a><span class="material-symbols-rounded">keyboard_voice</span></a>
+              <div>
+                <ul class="navbar-nav" id="topnav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="material-symbols-outlined">video_call</span></a>
+                    </li><br>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="material-symbols-outlined">notifications</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="material-symbols-rounded">account_circle</span>
+                        </a>
+                    </li><br>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!--Nav Bar ends-->
+        <!--Options bar-->
+        <div id="sub-nav" class="carousel slide">
+            <button class="carousel-control-prev" type="button" data-bs-target="#sub-nav" data-bs-touch="false" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <div class="carousel-item active" data-bs-interval="false">
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">All</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Courses</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Universities</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Cloud Computing</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Hotels</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Comedies</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Science Fiction</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Trailers</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Tourist Attractions</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">United Nations</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Baking</a>
+            </div>
+            <div class="carousel-item">
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Met Gala</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Cooking Shows</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">T-Series</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Sci-fi Films</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Civil Service Exams</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Cooking Shows</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Gadgets</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Live</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">Recently uploaded</a>
+                <a href="#" type="button" class="btn btn-link" data-bs-toggle="button">New to you</a>
+            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#sub-nav" data-bs-touch="false" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--Options bar ends-->
+
+        <!--Sidebar-->
+        <div id="static-sidebar" style="width:100px">
+            <ul style="list-style-type: none; font-size: x-large; padding-bottom: 50%; padding-left: 1rem;">
+                <li><span class="material-symbols-rounded">home</span></li>
+                <p class="labels">Home</p>
+                <li><span class="material-symbols-outlined">explore</span></li>
+                <p class="labels">Explore</p>
+                <li><span class="material-symbols-outlined">subscriptions</span></li>
+                <p class="labels">Subscriptions</p>
+                <li><span class="material-symbols-outlined">video_library</span></li><p class="labels">Library</p>
+                <li><span class="material-symbols-outlined">history</span></li><p class="labels">History</p>
+            </ul>
+        </div>
+        <div class="collapse collapse-horizontal" id="sidebar">
+            <div class="sidebar">
+                <ul  class="navbar-nav"  id="sidenav">
+                    <li><a href="#home" id="home"><span class="material-symbols-rounded">home</span>&emsp;&emsp;Home</a></li>
+                    <li><a href="#explore"><span class="material-symbols-outlined">explore</span>&emsp;&emsp;Explore</a></li>
+                    <li><a href="#subscriptions"><span class="material-symbols-outlined">subscriptions</span>&emsp;&emsp;
+                        Subscriptions</a></li>
+                    <hr style="margin-left:-20px;">
+                    <li><a href="#library"><span class="material-symbols-outlined">video_library</span>&emsp;&emsp;Library</a></li>
+                    <li><a href="#history"><span class="material-symbols-outlined">history</span>&emsp;&emsp;History</a></li>
+                    <li><a href="#watchlater"><span class="material-symbols-outlined">schedule</span>&emsp;&emsp;Watch Later</a></li>
+                    <li><a href="likedvideos"><span class="material-symbols-outlined">thumb_up</span>&emsp;&emsp;Liked Videos</a></li>
+                    <hr style="margin-left:-20px;">
+                    <li><a href="#"><span class="material-icons-outlined">add_circle</span>&emsp;&emsp;Browse channels</a></li>
+                    <hr style="margin-left:-20px;">
+                    <li><h6 style="font-size: 1rem; color: grey;">MORE FROM YOUTUBE</h6></li>
+                    <li><a href="#"><span class="material-icons-outlined">music_note</span>&emsp;&emsp;Music</a></li>
+                    <li><a href="#"><i class="fas fa-trophy"></i>&emsp;&emsp;Sports</a></li>
+                    <li><a href="#"><i class="fas fa-gamepad"></i>&emsp;&emsp;Gaming</a></li>    
+                    <li><a href="#"><i class="fas fa-film"></i>&emsp;&emsp;Movies</a></li>                          
+                    <li><a href="#"><i class="far fa-newspaper"></i>&emsp;&emsp;News</a></li>                   
+                    <li><a href="#"><i class="fas fa-satellite-dish">    </i>&emsp;&emsp;Live</a> </li>                       
+                    <li><a href="#"><i class="fas fa-tshirt"></i>&emsp;&emsp;Fashion & beauty</a></li>                       
+                    <li><a href="#"><i class="fas fa-lightbulb"></i>&emsp;&emsp;Learning</a></li>                       
+                    <li><a href="#"><i class="fab fa-youtube"></i>&emsp;&emsp;Spotlight</a></li>                        
+                    <li><a href="#"><i class="fas fa-gamepad"></i>&emsp;&emsp;360° Video</a></li>
+                    <hr style="margin-left:-20px;">
+                    <li><a href="#"><i class="fas fa-cog"></i>&emsp;&emsp;Settings</a></li>
+                    <li><a href="#"><i class="far fa-flag"></i>&emsp;&emsp;Report history</a></li>
+                    <li><a href="#"><i class="fas fa-exclamation-circle"></i>&emsp;&emsp;Help</a></li>
+                    <li><a href="#"><i class="far fa-comment-alt"></i>&emsp;&emsp;Send feedback</a></li>
+                    <hr style="margin-left:-20px;">
+                </ul>
+                    <p style="color:rgb(97, 96, 96); margin-left:20px;">About &emsp; Press &emsp; Copyright Contact us &emsp; Creator &emsp; Advertise &emsp; Developers</p>
+                    <p style="color: rgb(97, 96, 96); margin-left:20px;">Terms &emsp; Privacy Policy & Safety &emsp; How YouTube works Test new features</p>
+                    <p style="color:rgb(184, 181, 181); margin-left:20px;">© 2021 Google LLC</p>
+            </div>
+        </div>
+        <!--sidebar ends-->
+        <!-- Main body start-->
+        <div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3" id="firstrow">
+                <div class="col">
+                    <div class="card">
+                        <img src="video-img.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <span style="display: inline-flex;">
+                                <img src="channel-logo.jpg" class="channel-logo">
+                            <p class="card-title">Desh Dekho Festive Offer</p></span>
+                            <p class="card-text">Taj Hotels<br>200 views • 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="video-img.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <span style="display: inline-flex;">
+                                <img src="channel-logo.jpg" class="channel-logo">
+                            <p class="card-title">Desh Dekho Festive Offer</p></span>
+                            <p class="card-text">Taj Hotels<br>200 views • 1 day ago</p>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="video-img.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <span style="display: inline-flex;">
+                                <img src="channel-logo.jpg" class="channel-logo">
+                        <p class="card-title">Desh Dekho Festive Offer</p></span>
+                        <p class="card-text">Taj Hotels<br>200 views • 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="video-img.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <span style="display: inline-flex;">
+                                <img src="channel-logo.jpg" class="channel-logo">
+                                <p class="card-title">Desh Dekho Festive Offer</p>
+                            </span>
+                        <p class="card-text">Taj Hotels<br>200 views • 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                <div class="col">
+                    <div class="card">
+                        <img src="video-img.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <span style="display: inline-flex;">
+                                <img src="channel-logo.jpg" class="channel-logo">
+                            <p class="card-title">Desh Dekho Festive Offer</p></span>
+                            <p class="card-text">Taj Hotels<br>200 views • 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="video-img.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <span style="display: inline-flex;">
+                                <img src="channel-logo.jpg" class="channel-logo">
+                            <p class="card-title">Desh Dekho Festive Offer</p></span>
+                            <p class="card-text">Taj Hotels<br>200 views • 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="video-img.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <span style="display: inline-flex;">
+                                <img src="channel-logo.jpg" class="channel-logo">
+                        <p class="card-title">Desh Dekho<br> Festive Offer</p></span>
+                        <p class="card-text">Taj Hotels<br>200 views • 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="video-img.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <span style="display: inline-flex;">
+                                <img src="channel-logo.jpg" class="channel-logo">
+                        <p class="card-title">Desh Dekho Festive Offer</p></span>
+                        <p class="card-text">Taj Hotels<br>200 views • 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Main body ends-->
+
+        <!--BootStrap-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    </body>
+</html>
